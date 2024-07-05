@@ -1,0 +1,364 @@
+*,*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444444;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #FFFDDE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  color: #1acc8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #34e5a6;
+  text-decoration: none;
+}
+
+ /* >>>>>>>>>> Header <<<<<<<<<<*/
+ 
+header {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+   
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+  z-index: 9999;
+
+  position: fixed;
+  top: 0; right: 0; left: 0;
+}
+   
+header .logo img {
+  padding: 0; margin: 0;
+  max-height: 48px;
+}
+
+header .logo h1 {
+  font-size: 28px;
+  margin: 0; padding: 0;
+  font-weight: 700;
+}
+  
+header .logo h1 a{
+  color: #594545;
+  text-decoration: none;
+}
+
+header .navbar ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header .navbar li {
+  list-style-type: none;
+}
+
+header .navbar li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #594545;
+  transition: all 0.2s ease-in-out;
+
+}
+
+header .navbar li:hover a {
+  background: #D2691E;
+  color: white;
+}
+
+/* >>>>>>>>>>> Main <<<<<<<<<< */
+
+main {  
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding:190px 0 0 0;
+ 
+}
+
+/* >>>>>>>>>> Beranda <<<<<<<<<< */
+
+main .beranda {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+main h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #594545;
+}
+
+main h2 {
+  color: #594545;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+main h5 {
+  color: #594545;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+main .button{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #594545;
+}
+
+main .button:hover{
+  background: #D2691E;
+  color: white;
+}
+
+
+
+/* >>>>>>>>>>> Aside <<<<<<<<<< */
+aside {
+  display: flex;
+  justify-content: flex-end;
+}
+aside .content-image {
+  width: 400px;
+  display: flex;
+
+}
+
+aside .content-media {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+
+aside .social-media ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.item a {
+  text-decoration: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99999;
+}
+
+.icon {
+  font-size: 30px;
+  color: #594545;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.social-media .item .icon:hover {
+  transform: scale(1.2); 
+  color: #D2691E;
+}
+
+
+
+/* >>>>>>>>>> Produk <<<<<<<<<< */
+
+main .produk {
+  padding:135px 0 0 0;
+}
+
+main .produk h3 {
+  text-align: center;
+  margin: 0; padding: 0;
+  font-size: 28px;
+}
+
+main .produk .box-container{
+  padding: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .produk .box{
+  background: white;
+  text-align: center;
+  padding: 25px 25px 25px;
+  border-radius: 35px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+main .produk .box:hover {
+  transform: scale(1.1); 
+}
+
+main .produk .box span {
+  font-size: 24px;
+}
+
+
+
+/* >>>>>>>>>> Tentang Kami <<<<<<<<<< */
+
+main .about {
+  padding:180px 0 0 0;
+}
+
+
+main .about h1{
+  text-align: center;
+  margin: 0; padding: 0;
+  font-size: 30px;
+}
+
+
+main .about .about-description{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+
+
+main .about .about-description .image img{
+  width: 100%;
+}
+
+
+main .about .about-description .content{
+  flex: 1 1 720px;
+}
+
+main .about .about-description .content p{
+  font-size: 24px;
+  padding: 8px 0;
+  line-height: 2;
+  text-align: justify;
+}
+
+main .about .about-description .content .icon-container{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  margin-top: 8px;
+}
+
+main .about .about-description .content .icon-container .icons{
+  background: #eee;
+  border-radius: 8px;
+  border: 1.6px solid rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex: 1 1 272px;
+  padding: 24px 16px;
+  transition: 0.8s;
+}
+
+main .about .about-description .content .icon-container .icons:hover {
+  background: #594545;
+  color: white;
+}
+
+main .about .about-description .content .icon-container .icons i {
+  font-size: 40px;
+}
+
+
+main .about .about-description .content .icon-container .icons span {
+  font-size: 24px;
+}
+
+
+/* >>>>>>>>>> Footer <<<<<<<<<< */
+
+footer .content {
+  width: 100%;
+
+  padding-block: 1rem;
+  margin-inline: auto;
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  z-index: 9999;  
+
+  font-size: 18px;
+  padding:90px 0 0 0;
+  background: #FFFDDE;
+}
+
+footer .content a {
+  color: #594545;
+
+}
+
+footer .content .nav-foot ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+footer .content .nav-foot li {
+  list-style-type: none;
+
+}
+
+
+
+
+
+
